@@ -1,7 +1,10 @@
 package com.suman.recipes.dto;
 
+import lombok.Builder;
+
 import java.util.UUID;
 
+@Builder
 public record RecipeResponse(
         UUID id,
         String name,
