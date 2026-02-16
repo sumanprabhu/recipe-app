@@ -18,18 +18,10 @@ export default function RecipeModal({ recipe, onClose }: RecipeModalProps) {
         <img src={recipe.image} width="200" />
 
         <h3>Ingredients:</h3>
-        <ul>
-          {recipe.ingredients.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
-        </ul>
+        <ul></ul>
 
         <h3>Instructions:</h3>
-        <ol>
-          {recipe.instructions.map((step, i) => (
-            <li key={i}>{step}</li>
-          ))}
-        </ol>
+        <ol></ol>
 
         <p>
           <strong>Prep:</strong> {recipe.prepTimeMinutes} mins

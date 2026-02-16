@@ -13,7 +13,6 @@ export default function RecipeCard({ recipe, onSelect }: RecipeCardProps) {
       <img src={recipe.image} width={150} height={150} />
       <p>Cuisine: {recipe.cuisine}</p>
       <p>Difficulty: {recipe.difficulty}</p>
-      <p>Meal: {recipe.mealType.join(", ")}</p>
       <button onClick={() => onSelect(recipe)}>Recipe</button>
     </div>
   );

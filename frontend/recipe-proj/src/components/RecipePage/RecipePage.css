@@ -50,3 +50,45 @@ body {
   gap: 24px;
   padding: 20px;
 }
+
+.filters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.filters-container input,
+.filters-container select {
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+}
+
+.filters-container input {
+  width: 220px;
+}
+
+.filters-container select {
+  cursor: pointer;
+}
+
+/* Focus Effect */
+.filters-container input:focus,
+.filters-container select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.4);
+}
+
+/* Hover Effect */
+.filters-container select:hover,
+.filters-container input:hover {
+  border-color: #3b82f6;
+}
+
